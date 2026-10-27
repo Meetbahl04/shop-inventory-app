@@ -102,3 +102,8 @@ npx react-native run-android
 cd ios && pod install && cd ..
 npx react-native run-ios
 ```
+> This project uses an older React Native version (0.61 era). If the build fails on a modern toolchain, try an older Node LTS and Java 8 or 11.
+
+### Backend
+
+The app talks to a hosted API. The API base URL is set in the screens and components that make network requests (for example `src/screens/LoginScreen.js`). If the hosted API is down, login and data screens will not work.
