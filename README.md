@@ -55,3 +55,50 @@ The app serves as the **mobile frontend client**, communicating with a securely 
 | Add employee | | |
 
 ## Project Structure
+
+```
+.
+├── App.js              # Navigation setup (login, register, profile, drawer)
+├── index.js            # App entry point
+├── android/            # Android native project
+├── ios/                # iOS native project
+├── screenshots/        # Images used in this README
+├── src/
+│   ├── screens/        # Screen-level components
+│   ├── components/     # Reusable UI (Buy/Sell forms, charts, list items)
+│   ├── utils/          # Auth helpers (token check, logout)
+│   ├── controllers/    # Business logic
+│   ├── config/         # Configuration (colors, etc.)
+│   └── Images/         # Static images
+└── package.json
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm (or Yarn)
+- The React Native environment set up for your platform: see the [official guide](https://reactnative.dev/docs/environment-setup)
+- Android Studio (Android) or Xcode with CocoaPods (iOS, macOS only)
+
+### Installation
+
+```bash
+git clone [https://github.com/Meetbahl04/shop-inventory-app.git](https://github.com/Meetbahl04/shop-inventory-app.git)
+cd shop-inventory-app
+npm install
+
+### Run on Android
+
+```bash
+npx react-native start
+# in a second terminal
+npx react-native run-android
+```
+
+### Run on iOS (macOS only)
+
+```bash
+cd ios && pod install && cd ..
+npx react-native run-ios
+```
